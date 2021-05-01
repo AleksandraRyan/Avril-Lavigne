@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  text-align: center;
+}
+
+#title h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+#title h4 {
+  margin-top: 0;
+}
+
+#image {
+  margin-top: 50px;
+  border: 5px solid #000;
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* About */
+#tribute-info {
+  padding: 50px;
+}
+
+#tribute-info h3 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+#tribute-info p {
+  font-family: 'Playfair Display', serif;
+  line-height: 2;
+  letter-spacing: 0.7px;
+}
+
+/* Music */
+.albums ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.albums h3 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+/* Album covers Gallery */
+.album-covers {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 50px;
+  column-gap: 10px;
+}
+
+.album-covers img {
+  border-radius: 0;
+}
+
+/* Gallery */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+}
+
+#img-gallery h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+img {
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 60px;
+}
+
+footer h2 {
+  margin-bottom: 0;
+  font-style: italic;
+}
+footer h3 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+footer h4 {
+  margin-top: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .albums ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .albums ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .albums h3 {
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+
+  .album-covers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+    gap: 10px;
+  }
+
+  #gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    row-gap: 5px;
+    column-gap: 10px;
+  }
+
+  #image {
+    margin-top: 50px;
+    border: 5px solid #000;
+    width: 60%;
+    border-radius: 50%;
+  }
+
+  footer h2 {
+    font-size: 20px;
+  }
+
+  footer h3 {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+}

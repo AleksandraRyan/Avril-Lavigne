@@ -129,12 +129,13 @@ img {
 /* Footer */
 footer {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 footer h2 {
   margin-bottom: 0;
   font-style: italic;
+  font-size: 1em;
 }
 footer h3 {
   margin-bottom: 10px;
@@ -193,8 +194,13 @@ footer a {
     border-radius: 50%;
   }
 
+  footer {
+    margin-top: 30px;
+  }
+
   footer h2 {
-    font-size: 20px;
+    margin-top: 0;
+    font-size: 0.9em;
   }
 
   footer h3 {

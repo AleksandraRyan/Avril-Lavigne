@@ -17,6 +17,34 @@ img {
   margin: 0 auto;
 }
 
+/* Navbar */
+.navbar > ul {
+  display: flex;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  margin-right: 100px;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 65%;
+  transition: width 0.3s;
+}
+
 /* Header */
 header {
   text-align: center;
